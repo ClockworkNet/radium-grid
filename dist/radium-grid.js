@@ -4074,51 +4074,55 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _propTypes = __webpack_require__(3);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
 	var _radium = __webpack_require__(12);
 	
 	var _radium2 = _interopRequireDefault(_radium);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	/* eslint-disable new-cap */
 	var Cell = function Cell(props) {
 	  return _react2.default.createElement(
 	    "div",
 	    { style: props.style },
 	    props.children
 	  );
-	};
+	}; /* eslint-disable new-cap */
 	
-	var horizontalPropType = _react.PropTypes.oneOf(["left", "center", "right"]);
-	var verticalPropType = _react.PropTypes.oneOf(["top", "middle", "bottom"]);
+	
+	var horizontalPropType = _propTypes2.default.oneOf(["left", "center", "right"]);
+	var verticalPropType = _propTypes2.default.oneOf(["top", "middle", "bottom"]);
 	Cell.propTypes = {
-	  width: _react.PropTypes.string,
+	  width: _propTypes2.default.string,
 	  horizontalAlign: horizontalPropType,
 	  verticalAlign: verticalPropType,
-	  order: _react.PropTypes.number,
+	  order: _propTypes2.default.number,
 	
-	  smallWidth: _react.PropTypes.string,
+	  smallWidth: _propTypes2.default.string,
 	  smallHorizontalAlign: horizontalPropType,
 	  smallVerticalAlign: verticalPropType,
-	  smallOrder: _react.PropTypes.number,
+	  smallOrder: _propTypes2.default.number,
 	
-	  mediumWidth: _react.PropTypes.string,
+	  mediumWidth: _propTypes2.default.string,
 	  mediumHorizontalAlign: horizontalPropType,
 	  mediumVerticalAlign: verticalPropType,
-	  mediumOrder: _react.PropTypes.number,
+	  mediumOrder: _propTypes2.default.number,
 	
-	  largeWidth: _react.PropTypes.string,
+	  largeWidth: _propTypes2.default.string,
 	  largeHorizontalAlign: horizontalPropType,
 	  largeVerticalAlign: verticalPropType,
-	  largeOrder: _react.PropTypes.number,
+	  largeOrder: _propTypes2.default.number,
 	
-	  xlargeWidth: _react.PropTypes.string,
+	  xlargeWidth: _propTypes2.default.string,
 	  xlargeHorizontalAlign: horizontalPropType,
 	  xlargeVerticalAlign: verticalPropType,
-	  xlargeOrder: _react.PropTypes.number,
+	  xlargeOrder: _propTypes2.default.number,
 	
-	  children: _react.PropTypes.node,
-	  style: _react.PropTypes.object
+	  children: _propTypes2.default.node,
+	  style: _propTypes2.default.object
 	};
 	
 	exports.default = (0, _radium2.default)(Cell);
